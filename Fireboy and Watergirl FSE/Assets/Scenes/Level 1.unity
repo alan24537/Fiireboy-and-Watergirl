@@ -175,13 +175,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 307729843462691425, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
-      propertyPath: runSpeed
-      value: 80
+    - target: {fileID: 2829273286829143389, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438894656785154924, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4416445208569468201, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
       propertyPath: m_Name
       value: Watergirl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659281486573586055, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8029165665553653123, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
       propertyPath: m_RootOrder
@@ -2013,14 +2021,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6016706758035326402, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
-      propertyPath: m_Enabled
+    - target: {fileID: 6016706758035326403, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6016706758035326403, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6016706758035326402, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 5b702224924429443a86799a7af7da74, type: 2}
     - target: {fileID: 6016706758872240988, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -2069,8 +2077,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fireboy
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6016706758035326405, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
 --- !u!1 &776837692
 GameObject:
@@ -3096,7 +3103,7 @@ Tilemap:
       - {fileID: 301396713, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 1691513106, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 730126425, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
-      m_AnimationSpeed: 30.000002
+      m_AnimationSpeed: 30
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -5, y: -5, z: 0}

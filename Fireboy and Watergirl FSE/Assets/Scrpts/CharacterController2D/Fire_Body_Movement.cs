@@ -16,10 +16,6 @@ public class Fire_Body_Movement : MonoBehaviour
     void Update() {
         
         animator.SetFloat("Speed",Mathf.Abs(firemove.horizontalMove));
-        animator.SetBool("isJumping",firemove.IsJumping);
-        if (Input.GetButtonDown("JumpFire")) {
-            animator.SetBool("isJumping",true);
-        }
     }
     void FixedUpdate() {
     }
