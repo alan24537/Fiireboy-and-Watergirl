@@ -1,0 +1,4 @@
+repository "Fireboy and Watergirl FSE@Fireboy_and_Watergirl_FSE@cloud"
+  path "/"
+    br "/main"
+    co "/main"
