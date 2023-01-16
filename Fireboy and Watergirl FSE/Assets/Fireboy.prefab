@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 6016706758853265395}
   m_Layer: 6
   m_Name: Fireboy_Body
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -368,9 +368,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6016706758872240988}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fireboy
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
