@@ -2866,7 +2866,7 @@ Tilemap:
       - {fileID: 1947408482, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 1218392927, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 618221109, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
-      m_AnimationSpeed: 30.000002
+      m_AnimationSpeed: 30
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 0, y: -5, z: 0}
@@ -3311,7 +3311,7 @@ Tilemap:
       - {fileID: -647598934, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 187529370, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: -1807858547, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
-      m_AnimationSpeed: 30
+      m_AnimationSpeed: 30.000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -3410,6 +3410,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8560f30d0d616e45b36d5f3c4ccaa9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1884311857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1884311858}
+  - component: {fileID: 1884311859}
+  - component: {fileID: 1884311860}
+  m_Layer: 11
+  m_Name: ButtonActivate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1884311858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884311857}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.37223113, y: -0.589, z: 0.012272343}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1926696993}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1884311859
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884311857}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.5, y: 0}
+  - {x: 0.5, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &1884311860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884311857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e412fa35ece91ee42a7ecebd8f5716e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &1926696992
 GameObject:
   m_ObjectHideFlags: 0
@@ -3441,6 +3509,7 @@ Transform:
   - {fileID: 1301644433}
   - {fileID: 1928199008}
   - {fileID: 1150400097}
+  - {fileID: 1884311858}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3458,8 +3527,6 @@ GameObject:
   - component: {fileID: 1928199009}
   - component: {fileID: 1928199010}
   - component: {fileID: 1928199011}
-  - component: {fileID: 1928199012}
-  - component: {fileID: 1928199013}
   m_Layer: 11
   m_Name: 'Button '
   m_TagString: Untagged
@@ -3482,7 +3549,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: -1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -3624,29 +3691,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagsToIgnore:
   - Ground
---- !u!247 &1928199012
-ConstantForce2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928199004}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 20}
-  m_RelativeForce: {x: 0, y: 0}
-  m_Torque: 1
---- !u!114 &1928199013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928199004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fa3685f622388c43b8cb56bc4178f0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2116811417
 GameObject:
   m_ObjectHideFlags: 0
@@ -3796,7 +3840,8 @@ MonoBehaviour:
   end_pos: {x: -3.5, y: 2, z: 0}
   speed: 3
   isOn: 0
-  lever: {fileID: 913536900}
+  lever: {fileID: 0}
+  button: {fileID: 1884311860}
 --- !u!60 &2133550506
 PolygonCollider2D:
   m_ObjectHideFlags: 0

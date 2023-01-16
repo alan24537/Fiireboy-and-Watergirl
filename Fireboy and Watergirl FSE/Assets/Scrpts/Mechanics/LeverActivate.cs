@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeverController : MonoBehaviour {
+public class LeverActivate : MonoBehaviour {
     // Start is called before the first frame update
 
     // Gets the current rotation of the lever's hinge joint 2d
