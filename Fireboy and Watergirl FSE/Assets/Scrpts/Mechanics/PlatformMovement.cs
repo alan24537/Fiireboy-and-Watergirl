@@ -12,12 +12,13 @@ public class PlatformMovement : MonoBehaviour {
 
     // Lever object to see if we want to turn on the platform
     public LeverActivate lever;
-    public ButtonActivate button;
+    public ButtonActivate button1;
+    public ButtonActivate button2;
 
     void Start () {
         speed = 1f;
 
-        if (lever == null && button == null) {
+        if (lever == null && button1 == null && button2 == null) {
             isOn = true;
         }
         else {
@@ -27,8 +28,14 @@ public class PlatformMovement : MonoBehaviour {
 
     void Update () {
 
-        if (button != null) {
-            isOn = button.isOn;
+        if (button1 != null && button2 == null) {
+            isOn = button1.isOn;
+        }
+        if (button2 != null && button1 == null) {
+            isOn = button2.isOn;
+        }
+        if (button1 != null && button2 != null) {
+            isOn = button1.isOn || button2.isOn;
         }
         if (lever != null) {
             isOn = lever.isOn;
