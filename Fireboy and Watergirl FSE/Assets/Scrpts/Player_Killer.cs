@@ -10,7 +10,7 @@ public class Player_Killer : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D c2d) {
 
-        if (gameObject.name == "Green Goo Tilemap") {
+        if (gameObject.name == "Acid Tilemap") {
             Destroy(c2d.gameObject);
         }
         else if (c2d.name.Contains("Fireboy") && gameObject.name == "Water Tilemap") {
