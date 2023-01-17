@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireMoveAttempt : MonoBehaviour
+public class WaterMovementAttempt : MonoBehaviour
 {
-   private float horizontal;
+    private float horizontal;
     private float speed = 6f;
     private float jumpingPower = 9f;
     private bool isFacingRight = true;
@@ -17,14 +17,14 @@ public class FireMoveAttempt : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        horizontal = Input.GetAxisRaw("HorizontalFire");
+        horizontal = Input.GetAxisRaw("HorizontalWater");
         animator.SetFloat("Speed",Mathf.Abs(horizontal));
 
-        if (Input.GetButton("JumpFire") && IsGrounded()){
+        if (Input.GetButton("JumpWater") && IsGrounded()){
             rb.velocity = new Vector2(rb.velocity.x,jumpingPower);
             animator.SetBool("isJumping",true);
         }
-        if (Input.GetButtonUp("JumpFire") && rb.velocity.y>0f){
+        if (Input.GetButtonUp("JumpWater") && rb.velocity.y>0f){
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y*0.5f);
         }
         if (rb.velocity.y <0){
