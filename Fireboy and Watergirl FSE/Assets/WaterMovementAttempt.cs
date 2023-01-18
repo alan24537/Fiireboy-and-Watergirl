@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class WaterMovementAttempt : MonoBehaviour
 {
-    private float horizontal;
+    public float horizontal;
     private float speed = 6f;
     private float jumpingPower = 9f;
     private bool isFacingRight = true;
+    public bool IsJumping = false;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -22,6 +23,7 @@ public class WaterMovementAttempt : MonoBehaviour
 
         if (Input.GetButton("JumpWater") && IsGrounded()){
             rb.velocity = new Vector2(rb.velocity.x,jumpingPower);
+            IsJumping = true;
             animator.SetBool("isJumping",true);
         }
         if (Input.GetButtonUp("JumpWater") && rb.velocity.y>0f){
@@ -30,6 +32,7 @@ public class WaterMovementAttempt : MonoBehaviour
         if (rb.velocity.y <0){
             animator.SetBool("isFalling",true);
             animator.SetBool("isJumping",false);
+            IsJumping = false;
         }
         else{
             animator.SetBool("isFalling",false);

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class FireMoveAttempt : MonoBehaviour
 {
-   private float horizontal;
+    public float horizontal;
     private float speed = 6f;
     private float jumpingPower = 9f;
     private bool isFacingRight = true;
+    public bool IsJumping = false;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -23,6 +24,7 @@ public class FireMoveAttempt : MonoBehaviour
         if (Input.GetButton("JumpFire") && IsGrounded()){
             rb.velocity = new Vector2(rb.velocity.x,jumpingPower);
             animator.SetBool("isJumping",true);
+            IsJumping = true;
         }
         if (Input.GetButtonUp("JumpFire") && rb.velocity.y>0f){
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y*0.5f);
@@ -30,6 +32,7 @@ public class FireMoveAttempt : MonoBehaviour
         if (rb.velocity.y <0){
             animator.SetBool("isFalling",true);
             animator.SetBool("isJumping",false);
+            IsJumping = false;
         }
         else{
             animator.SetBool("isFalling",false);

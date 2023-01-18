@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Water_Body_Movement : MonoBehaviour {
     public Animator animator;
-    public PlayerMovementWater watermove;
-
+    public WaterMovementAttempt watermove;
     // Start is called before the first frame update
     void Start() {
         
@@ -14,11 +13,8 @@ public class Water_Body_Movement : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         
-        animator.SetFloat("Speed",Mathf.Abs(watermove.horizontalMove));
+        animator.SetFloat("Speed",Mathf.Abs(watermove.horizontal));
         animator.SetBool("isJumping",watermove.IsJumping);
-        if (Input.GetButtonDown("JumpWater")) {
-            animator.SetBool("isJumping",true);
-        }
     }
     void FixedUpdate() {
     }
