@@ -18,4 +18,8 @@ public class SceneMover : MonoBehaviour {
     public void quitGame() {
         Application.Quit();
     }
+
+    public void retryGame() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
 }
