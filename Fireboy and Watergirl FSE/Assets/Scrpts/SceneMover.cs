@@ -15,6 +15,7 @@ public class SceneMover : MonoBehaviour {
         PlayerStats.reset_player_stats();
 
         PlayerStats.level ++;
+        Debug.Log("Level: " + PlayerStats.level);
         SceneManager.LoadScene(PlayerStats.level + 2);
     }
 
