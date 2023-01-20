@@ -55,3 +55,6 @@ TagManager:
   - name: Liquid
     uniqueID: 4113862203
     locked: 0
+  - name: Decorations
+    uniqueID: 1370199589
+    locked: 0
