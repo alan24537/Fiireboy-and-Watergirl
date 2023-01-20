@@ -5,8 +5,8 @@ using UnityEngine;
 public class FireMoveAttempt : MonoBehaviour
 {
     public float horizontal;
-    private float speed = 6f;
-    private float jumpingPower = 9f;
+    private float speed = 4f;
+    private float jumpingPower = 6f;
     private bool isFacingRight = true;
     public bool IsJumping = false;
 
