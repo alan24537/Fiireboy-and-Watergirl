@@ -16,7 +16,7 @@ public class NextLevel : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (fireDoor.isDone && waterDoor.isDone) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+            SceneManager.LoadScene(SceneMover.CONTINUE_SCENE);
         }
     }
 }

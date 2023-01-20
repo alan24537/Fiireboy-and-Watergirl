@@ -27,6 +27,6 @@ public class Player_Killer : MonoBehaviour {
 
     IEnumerator waitAndLoadNextScene(Collider2D c2d) { // Waits 1 second before loading the next retry scene
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneMover.DEATH_SCENE);
     }
 }
