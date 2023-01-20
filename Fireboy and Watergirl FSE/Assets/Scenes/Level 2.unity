@@ -166,7 +166,7 @@ Transform:
   m_Children:
   - {fileID: 402049097}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &249425733
 PrefabInstance:
@@ -6573,7 +6573,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.05
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -8074,7 +8074,7 @@ Tilemap:
       - {fileID: 1611735747, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: -706629677, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: -638793383, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
-      m_AnimationSpeed: 30
+      m_AnimationSpeed: 30.000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 0, y: -7, z: 0}
@@ -8617,7 +8617,7 @@ Tilemap:
       - {fileID: -1119131177, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: -601733673, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 608423116, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
-      m_AnimationSpeed: 30.000002
+      m_AnimationSpeed: 30
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 2, y: 4, z: 0}
@@ -9065,7 +9065,7 @@ Transform:
   - {fileID: 1497604065}
   - {fileID: 1178552916}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2133550501
 GameObject:
@@ -9152,7 +9152,7 @@ Transform:
   m_Children:
   - {fileID: 599515334}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &2133550505
 MonoBehaviour:
