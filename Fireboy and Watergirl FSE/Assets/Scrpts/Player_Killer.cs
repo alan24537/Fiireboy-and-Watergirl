@@ -11,15 +11,15 @@ public class Player_Killer : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D c2d) {
 
-        if (gameObject.name == "Acid Tilemap") {
+        if (gameObject.name.Contains("Acid Tilemap")) {
             Destroy(c2d.gameObject);
             StartCoroutine(waitAndLoadNextScene(c2d)); 
         }
-        else if (c2d.name.Contains("Fireboy") && gameObject.name == "Water Tilemap") {
+        else if (c2d.name.Contains("Fireboy") && gameObject.name.Contains("Water Tilemap")) {
             Destroy(c2d.gameObject);
             StartCoroutine(waitAndLoadNextScene(c2d)); 
         }
-        else if (c2d.name.Contains("Watergirl") && gameObject.name == "Lava Tilemap") {
+        else if (c2d.name.Contains("Watergirl") && gameObject.name.Contains("Lava Tilemap")) {
             Destroy(c2d.gameObject);
             StartCoroutine(waitAndLoadNextScene(c2d)); 
         }
