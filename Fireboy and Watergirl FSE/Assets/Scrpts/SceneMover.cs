@@ -1,3 +1,5 @@
+// Provides methods to move between scenes
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,25 +11,24 @@ public class SceneMover : MonoBehaviour {
     public static int DEATH_SCENE = 1;
     public static int CONTINUE_SCENE = 2;
 
-    public void playGame() {
+    public void playGame() { // loads the next level
 
         // Reset the player stats
         PlayerStats.reset_player_stats();
 
-        PlayerStats.level ++;
-        Debug.Log("Level: " + PlayerStats.level);
-        SceneManager.LoadScene(PlayerStats.level + 2);
+        PlayerStats.level ++; // Increment the level
+        SceneManager.LoadScene(PlayerStats.level + 2); // Load the next level
     }
 
-    public void goToMenu() {
+    public void goToMenu() { // loads the menu
         SceneManager.LoadScene(MENU_SCENE);
     }
 
-    public void quitGame() {
+    public void quitGame() { // quits the game
         Application.Quit();
     }
 
-    public void retryGame() {
+    public void retryGame() { // reloads the current level
         SceneManager.LoadScene(PlayerStats.level + 2);
     }
 }
