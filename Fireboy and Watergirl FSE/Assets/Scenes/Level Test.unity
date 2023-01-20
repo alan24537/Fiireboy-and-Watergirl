@@ -3608,11 +3608,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6016706758035326392, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.58
+      value: 2.02
       objectReference: {fileID: 0}
     - target: {fileID: 6016706758035326392, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.823
+      value: 4.3
       objectReference: {fileID: 0}
     - target: {fileID: 6016706758035326393, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
       propertyPath: m_Enabled
@@ -3899,7 +3899,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -5488,11 +5488,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start_pos: {x: -6.0029, y: -0.2006, z: 0}
   end_pos: {x: -6.0029, y: -1.53, z: 0}
-  speed: 3
-  isOn: 0
   lever: {fileID: 913536900}
   button1: {fileID: 0}
   button2: {fileID: 0}
+  speed: 3
+  isOn: 0
 --- !u!60 &2133550506
 PolygonCollider2D:
   m_ObjectHideFlags: 0
