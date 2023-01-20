@@ -350,7 +350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4828678157762560688, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
       propertyPath: m_GravityScale
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5950470304086473461, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
       propertyPath: m_Enabled
@@ -3237,7 +3237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6016706758035326406, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
       propertyPath: m_GravityScale
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6016706758853265395, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
       propertyPath: firemove
@@ -4390,7 +4390,7 @@ Tilemap:
       - {fileID: 1611735747, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: -706629677, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: -638793383, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
-      m_AnimationSpeed: 30
+      m_AnimationSpeed: 30.000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -3, y: -8, z: 0}

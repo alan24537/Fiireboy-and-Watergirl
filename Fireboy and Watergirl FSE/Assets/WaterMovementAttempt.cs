@@ -9,6 +9,7 @@ public class WaterMovementAttempt : MonoBehaviour
     private float jumpingPower = 6f;
     private bool isFacingRight = true;
     public bool IsJumping = false;
+    private bool jump;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -21,13 +22,17 @@ public class WaterMovementAttempt : MonoBehaviour
         horizontal = Input.GetAxisRaw("HorizontalWater");
         animator.SetFloat("Speed",Mathf.Abs(horizontal));
 
-        if (Input.GetButton("JumpWater") && IsGrounded()){
+        if (Input.GetButton("JumpWater") && IsGrounded() && jump){
             rb.velocity = new Vector2(rb.velocity.x,jumpingPower);
             IsJumping = true;
             animator.SetBool("isJumping",true);
+            jump = false;
         }
         if (Input.GetButtonUp("JumpWater") && rb.velocity.y>0f){
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y*0.5f);
+        }
+        if(Input.GetButtonDown("JumpWater")){
+            jump = true;
         }
         if (rb.velocity.y <0){
             animator.SetBool("isFalling",true);

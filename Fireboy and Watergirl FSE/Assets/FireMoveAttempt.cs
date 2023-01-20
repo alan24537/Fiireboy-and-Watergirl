@@ -9,6 +9,7 @@ public class FireMoveAttempt : MonoBehaviour
     private float jumpingPower = 6f;
     private bool isFacingRight = true;
     public bool IsJumping = false;
+    private bool jump;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -21,13 +22,17 @@ public class FireMoveAttempt : MonoBehaviour
         horizontal = Input.GetAxisRaw("HorizontalFire");
         animator.SetFloat("Speed",Mathf.Abs(horizontal));
 
-        if (Input.GetButton("JumpFire") && IsGrounded()){
+        if (Input.GetButton("JumpFire") && IsGrounded() && jump){
             rb.velocity = new Vector2(rb.velocity.x,jumpingPower);
             animator.SetBool("isJumping",true);
             IsJumping = true;
+            jump = false;
         }
         if (Input.GetButtonUp("JumpFire") && rb.velocity.y>0f){
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y*0.5f);
+        }
+        if(Input.GetButtonDown("JumpFire")){
+            jump = true;
         }
         if (rb.velocity.y <0){
             animator.SetBool("isFalling",true);

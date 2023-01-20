@@ -378,7 +378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4828678157762560688, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
       propertyPath: m_GravityScale
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5950470304086473461, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
       propertyPath: m_Enabled
@@ -3420,7 +3420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6016706758035326406, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
       propertyPath: m_GravityScale
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6016706758853265395, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
       propertyPath: firemove

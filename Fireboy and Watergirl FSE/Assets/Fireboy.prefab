@@ -178,7 +178,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -358,7 +358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6016706758853265392}
-  firemove: {fileID: 6016706758035326393}
+  firemove: {fileID: 0}
 --- !u!1 &6016706758872240991
 GameObject:
   m_ObjectHideFlags: 0
