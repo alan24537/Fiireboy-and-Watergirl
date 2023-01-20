@@ -15,19 +15,19 @@ public class Player_Killer : MonoBehaviour {
 
         if (gameObject.name.Contains("Acid Tilemap")) { // if either player collides with the acid tilemap, they die
             Destroy(c2d.gameObject);
-            StartCoroutine(waitAndLoadNextScene(c2d)); 
+            StartCoroutine(waitAndLoadNextScene()); 
         }
         else if (c2d.name.Contains("Fireboy") && gameObject.name.Contains("Water Tilemap")) { // if fireboy collides with the water tilemap, he dies
             Destroy(c2d.gameObject);
-            StartCoroutine(waitAndLoadNextScene(c2d)); 
+            StartCoroutine(waitAndLoadNextScene()); 
         }
         else if (c2d.name.Contains("Watergirl") && gameObject.name.Contains("Lava Tilemap")) { // if watergirl collides with the lava tilemap, she dies
             Destroy(c2d.gameObject);
-            StartCoroutine(waitAndLoadNextScene(c2d)); 
+            StartCoroutine(waitAndLoadNextScene()); 
         }
     }
 
-    IEnumerator waitAndLoadNextScene(Collider2D c2d) { // Waits 1 second before loading the next retry scene
+    IEnumerator waitAndLoadNextScene() { // Waits 1 second before loading the next retry scene
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(SceneMover.DEATH_SCENE);
     }
