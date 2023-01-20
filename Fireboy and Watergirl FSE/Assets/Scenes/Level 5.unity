@@ -242,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4100528521006179274, guid: d996ba9358cdb5543aad1d8199dae3c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.58
+      value: -3.4
       objectReference: {fileID: 0}
     - target: {fileID: 4100528521006179274, guid: d996ba9358cdb5543aad1d8199dae3c6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2989,6 +2989,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a35fc0b14091e14b98e9b16a6b4c06b, type: 3}
+--- !u!114 &498538385 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5015899673668386573, guid: 3a35fc0b14091e14b98e9b16a6b4c06b, type: 3}
+  m_PrefabInstance: {fileID: 498538384}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 369525f0451d97747bd28478bfbe2d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3072,6 +3083,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &646024388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 646024390}
+  - component: {fileID: 646024389}
+  m_Layer: 0
+  m_Name: NextLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &646024389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646024388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28bea3255f24c514b9f1f64e708c0fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireDoor: {fileID: 498538385}
+  waterDoor: {fileID: 1000095349}
+--- !u!4 &646024390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646024388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.6710951, y: 0.25313345, z: -0.07504143}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &671950447
 PrefabInstance:
@@ -3659,6 +3716,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adcc72fdff81b0c41b593e1157fbf9de, type: 3}
+--- !u!114 &1000095349 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3217555858512730378, guid: adcc72fdff81b0c41b593e1157fbf9de, type: 3}
+  m_PrefabInstance: {fileID: 1000095348}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7112c691e4687f445a02e53faa1a22b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1043438827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4028,7 +4096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7231772404888597791, guid: 3384de773e522f84582562ebfddd4fc8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.54
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 7231772404888597791, guid: 3384de773e522f84582562ebfddd4fc8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4324,7 +4392,7 @@ Tilemap:
       - {fileID: 1947408482, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 1218392927, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 618221109, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
-      m_AnimationSpeed: 30.000002
+      m_AnimationSpeed: 30
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -5, y: -4, z: 0}
@@ -4345,7 +4413,7 @@ Tilemap:
       - {fileID: 2017143243, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 112656784, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 1549589476, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
-      m_AnimationSpeed: 30
+      m_AnimationSpeed: 30.000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -3, y: -4, z: 0}
