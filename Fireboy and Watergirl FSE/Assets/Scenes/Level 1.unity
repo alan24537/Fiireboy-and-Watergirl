@@ -280,6 +280,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.026
       objectReference: {fileID: 0}
+    - target: {fileID: 908487130577309831, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.011
+      objectReference: {fileID: 0}
+    - target: {fileID: 908487130577309831, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.579
+      objectReference: {fileID: 0}
     - target: {fileID: 2829273286829143389, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -7026,6 +7034,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6016706757492008909, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.021
+      objectReference: {fileID: 0}
+    - target: {fileID: 6016706757492008909, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.636
+      objectReference: {fileID: 0}
     - target: {fileID: 6016706758035326392, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.58
@@ -9296,11 +9312,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   start_pos: {x: -6.0029, y: -0.2006, z: 0}
   end_pos: {x: -6.0029, y: -1.53, z: 0}
-  speed: 3
-  isOn: 0
   lever: {fileID: 913536900}
   button1: {fileID: 0}
   button2: {fileID: 0}
+  speed: 3
+  isOn: 0
 --- !u!60 &2133550506
 PolygonCollider2D:
   m_ObjectHideFlags: 0
