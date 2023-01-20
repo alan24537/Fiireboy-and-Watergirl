@@ -60,6 +60,6 @@ public class FireMoveAttempt : MonoBehaviour
     }
 
     private bool IsGrounded(){
-        return Physics2D.OverlapCircle(groundCheck.position, 0f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
     }
 }

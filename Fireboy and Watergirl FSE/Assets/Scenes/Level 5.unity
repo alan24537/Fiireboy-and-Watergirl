@@ -301,6 +301,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.026
       objectReference: {fileID: 0}
+    - target: {fileID: 908487130577309831, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.018
+      objectReference: {fileID: 0}
+    - target: {fileID: 908487130577309831, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.606
+      objectReference: {fileID: 0}
     - target: {fileID: 2829273286829143389, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -3531,6 +3539,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6016706757492008909, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.023
+      objectReference: {fileID: 0}
+    - target: {fileID: 6016706757492008909, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.636
+      objectReference: {fileID: 0}
     - target: {fileID: 6016706758035326392, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.58
@@ -4834,7 +4850,7 @@ Tilemap:
       - {fileID: 1611735747, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: -706629677, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: -638793383, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
-      m_AnimationSpeed: 30.000002
+      m_AnimationSpeed: 30
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 2, y: -4, z: 0}
@@ -5210,7 +5226,7 @@ Tilemap:
       - {fileID: -647598934, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 187529370, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: -1807858547, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
-      m_AnimationSpeed: 30.000002
+      m_AnimationSpeed: 30
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -2, y: 3, z: 0}
