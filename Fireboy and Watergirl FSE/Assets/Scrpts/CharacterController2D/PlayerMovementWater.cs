@@ -1,3 +1,4 @@
+//old script fo rmovemennt isnt used
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

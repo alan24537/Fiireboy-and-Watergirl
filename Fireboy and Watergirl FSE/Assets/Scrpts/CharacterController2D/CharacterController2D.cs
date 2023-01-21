@@ -1,3 +1,5 @@
+//no longer used in the acual code. more a reference for other code
+
 using UnityEngine;
 using UnityEngine.Events;
 
