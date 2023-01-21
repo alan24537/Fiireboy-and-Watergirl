@@ -18,7 +18,7 @@ public class SceneMover : MonoBehaviour {
         PlayerStats.reset_player_stats();
 
         PlayerStats.level ++; // Increment the level
-        if (PlayerStats.level == 9) { // If the player has completed all the levels, load the end screen
+        if (PlayerStats.level == 10) { // If the player has completed all the levels, load the end screen
             SceneManager.LoadScene(FINISH_SCENE);
         }
         else {
