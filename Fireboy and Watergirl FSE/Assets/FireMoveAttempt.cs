@@ -1,3 +1,6 @@
+// Reference - https://www.youtube.com/watch?v=K1xZ-rycYY8
+// We edited it to make sure u can only jump once and not continously when holding the jump button
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
