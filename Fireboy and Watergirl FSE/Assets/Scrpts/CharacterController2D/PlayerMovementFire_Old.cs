@@ -1,14 +1,15 @@
-//old script fo rmovemennt isnt used
+//old script for movement
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovementWater : MonoBehaviour {
+public class PlayerMovementFire_Old : MonoBehaviour {
 
     public CharacterController2D controller;
     public Animator animator;
     public float runSpeed = 40f;
-	public bool Falling = false;
+    public bool Falling = false;
     public Rigidbody2D m_Rigidbody2D;
     public float horizontalMove = 0f;
     bool jump = false;
@@ -22,14 +23,15 @@ public class PlayerMovementWater : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         
-        horizontalMove =  Input.GetAxisRaw("HorizontalWater") * runSpeed;
+        horizontalMove =  Input.GetAxisRaw("HorizontalFire") * runSpeed;
         animator.SetFloat("Speed",Mathf.Abs(horizontalMove));
 
-        if (Input.GetButtonDown("JumpWater")) {
+        if (Input.GetButtonDown("JumpFire")) {
             jump = true;
             animator.SetBool("isJumping",true);
             IsJumping = true;
         }
+
         if (m_Rigidbody2D.velocity.y <0){
             Falling = true;
             animator.SetBool("isFalling",true);
@@ -40,7 +42,6 @@ public class PlayerMovementWater : MonoBehaviour {
             Falling = false;
             animator.SetBool("isFalling",false);
         }
-
     }
     public void OnLanding(){
         animator.SetBool("isJumping",false);

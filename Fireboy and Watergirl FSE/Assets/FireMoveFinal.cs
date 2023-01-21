@@ -1,13 +1,12 @@
-// Reference - https://www.youtube.com/watch?v=K1xZ-rycYY8 
+// Reference - https://www.youtube.com/watch?v=K1xZ-rycYY8
 // We edited it to make sure u can only jump once and not continously when holding the jump button
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//movememnt script for water girl
-public class WaterMovementAttempt : MonoBehaviour
+
+public class FireMoveFinal : MonoBehaviour
 {
-    //variables
     public float horizontal; //holds the dir of hori move
     private float speed = 3f; //how fast they move 
     private float jumpingPower = 5f; //how high the jump
@@ -15,7 +14,7 @@ public class WaterMovementAttempt : MonoBehaviour
     public bool IsJumping = false; //for teh animator to konw when we are jumping
     private bool jump; // if we are allowed to jump. (we can only single jump, meaing holding the button has no continuous jump)
 
-    //fields to be referenced from teh game
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -24,19 +23,19 @@ public class WaterMovementAttempt : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        horizontal = Input.GetAxisRaw("HorizontalWater"); //gets the axis input from the 'w' and 'a' direction
+        horizontal = Input.GetAxisRaw("HorizontalFire"); //gets the axis input from the 'w' and 'a' direction
         animator.SetFloat("Speed",Mathf.Abs(horizontal)); //to tell animator tht the player is moving left or right
 
-        if (Input.GetButton("JumpWater") && IsGrounded() && jump){ // allow jump when the player is on the ground and has only jumped once (single jumps not continuous when you hold the jump button)
+        if (Input.GetButton("JumpFire") && IsGrounded() && jump){ // allow jump when the player is on the ground and has only jumped once (single jumps not continuous when you hold the jump button)
             rb.velocity = new Vector2(rb.velocity.x,jumpingPower); //the rigid body's velocity, makes the jump depending on the jumping power
             IsJumping = true; //sets teh variable to true,
             animator.SetBool("isJumping",true); //tell the animator we are jumping so we know to chnage the animation
             jump = false; //do not allow jump
         }
-        if (Input.GetButtonUp("JumpWater") && rb.velocity.y>0f){ //when teh button is released, we start to fall
+        if (Input.GetButtonUp("JumpFire") && rb.velocity.y>0f){ //when teh button is released, we start to fall
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y*0.5f); // this allows for short jumps and long jumps
         }
-        if(Input.GetButtonDown("JumpWater")){ // when the button is pressed down again, then we set jump to true (when we loop through again is is turned false stopping continuous jumping)
+        if(Input.GetButtonDown("JumpFire")){ // when the button is pressed down again, then we set jump to true (when we loop through again is is turned false stopping continuous jumping)
             jump = true;
         }
         if (rb.velocity.y <0){ //if the player is falling
