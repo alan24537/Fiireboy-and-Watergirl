@@ -10,7 +10,7 @@ public class SceneMover : MonoBehaviour {
     public static int MENU_SCENE = 0;
     public static int DEATH_SCENE = 1;
     public static int CONTINUE_SCENE = 2;
-    public static int FINISH_SCENE = 13;
+    public static int FINISH_SCENE = 12;
 
     public void playGame() { // loads the next level
 
@@ -18,7 +18,7 @@ public class SceneMover : MonoBehaviour {
         PlayerStats.reset_player_stats();
 
         PlayerStats.level ++; // Increment the level
-        if (PlayerStats.level == 10) { // If the player has completed all the levels, load the end screen
+        if (PlayerStats.level == 9) { // If the player has completed all the levels, load the end screen
             SceneManager.LoadScene(FINISH_SCENE);
         }
         else {
