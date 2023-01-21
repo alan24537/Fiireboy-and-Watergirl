@@ -13,7 +13,7 @@ public class Player_Killer : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D c2d) {
 
-        if (gameObject.name.Contains("Acid Tilemap")) { // if either player collides with the acid tilemap, they die
+        if (gameObject.name.Contains("Acid Tilemap") && c2d.tag == "Player") { // if either player collides with the acid tilemap, they die
             Destroy(c2d.gameObject);
             StartCoroutine(waitAndLoadNextScene()); 
         }
