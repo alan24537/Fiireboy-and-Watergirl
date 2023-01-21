@@ -4,11 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fire_Body_Movement : MonoBehaviour
+public class Fire_Body_Movement: MonoBehaviour
 {
     //parameters to get from script
     public Animator animator; //animator for body
-    public FireMoveAttempt firemove; //head scirpt
+    public FireMoveFinal firemove; //head scirpt
 
     // Start is called before the first frame update
     void Start() {

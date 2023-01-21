@@ -7,7 +7,7 @@ using UnityEngine;
 public class Water_Body_Movement : MonoBehaviour {
     //parameters to get from script
     public Animator animator; //animator for body
-    public WaterMovementAttempt watermove; //head script
+    public WaterMoveFinal watermove; //head script
     // Start is called before the first frame update
     void Start() {
         
