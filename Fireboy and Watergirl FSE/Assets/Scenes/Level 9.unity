@@ -7110,7 +7110,7 @@ Tilemap:
       - {fileID: 301396713, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 1691513106, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
       - {fileID: 730126425, guid: 28285d6d283fa864f924f3d3a9cf1fd2, type: 3}
-      m_AnimationSpeed: 30
+      m_AnimationSpeed: 30.000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -3, y: -5, z: 0}
@@ -7353,23 +7353,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6016706757492008909, guid: fd08a68b43d61394cb9cc78dac575cb5, type: 3}
   m_PrefabInstance: {fileID: 683628458}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1139245511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2829273286829143389, guid: e5e7acc41704f76438a02a247e97e6e2, type: 3}
-  m_PrefabInstance: {fileID: 346516172}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1139245516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139245511}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff45b6a33256ddd418888e7975dd76df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1190796060 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6029344437522949540, guid: 7d3d1d37c73e7254f8d7e47b62bbb194, type: 3}
